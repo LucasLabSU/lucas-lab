@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{- $title := site.Title -}}
+{{- if not .IsHome -}}{{ $title = printf "%s · %s" .Title site.Title }}{{- end -}}
+<title>{{ $title }}</title>
+
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23d6492f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23f5f1e8'/%3E%3C/svg%3E">
+
+{{- /* Type: Fraunces (display) + Hanken Grotesk (body) */ -}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+{{- /* Tailwind CSS via Hugo's native pipe */ -}}
+{{ with resources.Get "css/main.css" }}
+  {{ $opts := dict "minify" hugo.IsProduction }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsProduction }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ else }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,132 @@
+# Publications for Sarah Lucas, imported from NCBI My Bibliography:
+# https://www.ncbi.nlm.nih.gov/myncbi/sarah.lucas.1/bibliography/public/
+#
+# `pdf`  -> free full text on PubMed Central (open access) where available.
+#          Swap for a self-hosted PDF (papers/<file>.pdf) any time you prefer.
+# `doi`  -> publisher version via doi.org.
+# The Research page groups these by year automatically.
+
+- title: "Host- and microbial-mediated mucin degradation differentially shape Pseudomonas aeruginosa physiology and gene expression."
+  authors: "Arif SJ, Hoffman KM, Flynn JM, Wiggen TD, Lucas SK, Villarreal AR, Gilbertsen AJ, Dunitz JM, Hunter RC."
+  venue: "PLoS Pathog. 21(10):e1013568"
+  year: 2025
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12503327/"
+  doi: "https://doi.org/10.1371/journal.ppat.1013568"
+  tags: ["Pseudomonas aeruginosa", "mucin"]
+
+- title: "Dual oxic-anoxic co-culture enables direct study of anaerobe-host interactions at the airway epithelial interface."
+  authors: "Moore PJ, Hoffman K, Ahmed S, Fletcher JR, Wiggen TD, Lucas SK, Arif SJ, Gilbertsen AJ, Kent LA, Fiege JK, Langlois RA, O'Grady SM, Hunter RC."
+  venue: "mBio. 16(5):e0133824"
+  year: 2025
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12077211/"
+  doi: "https://doi.org/10.1128/mbio.01338-24"
+  tags: ["airway", "anaerobes", "co-culture"]
+
+- title: "Genomics and synthetic community experiments uncover the key metabolic roles of acetic acid bacteria in sourdough starter microbiomes."
+  authors: "Rappaport HB, Senewiratne NPJ, Lucas SK, Wolfe BE, Oliverio AM."
+  venue: "mSystems. 9(10):e0053724"
+  year: 2024
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11498085/"
+  doi: "https://doi.org/10.1128/msystems.00537-24"
+  tags: ["sourdough", "microbiome", "genomics"]
+
+- title: "Industrialized human gut microbiota increases CD8+ T cells and mucus thickness in humanized mouse gut."
+  authors: "Vangay P, Ward T, Lucas S, Beura LK, Sabas D, Abramson M, Till L, Hoops SL, Kashyap P, Hunter RC, Masopust D, Knights D."
+  venue: "Gut Microbes. 15(2):2266627"
+  year: 2023
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10588527/"
+  doi: "https://doi.org/10.1080/19490976.2023.2266627"
+  tags: ["gut microbiome"]
+
+- title: "High-throughput quantification of microbial-derived organic acids in mucin-rich samples via reverse phase high performance liquid chromatography."
+  authors: "Villarreal AR, Lucas SK, Fletcher JR, Hunter RC."
+  venue: "J Med Microbiol. 72(6)"
+  year: 2023
+  doi: "https://doi.org/10.1099/jmm.0.001708"
+  tags: ["methods", "HPLC", "mucin"]
+
+- title: "Developing and deploying an integrated workshop curriculum teaching computational skills for reproducible research."
+  authors: "Lapp Z, Sovacool KL, Lesniak N, King D, Barnier C, Flickinger M, Krüger J, Armour CR, Lapp MM, Tallant J, Diao R, Oneka M, Tomkovich S, Anderson JM, Lucas SK, Schloss PD."
+  venue: "J Open Source Educ. 5(47)"
+  year: 2022
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8872090/"
+  doi: "https://doi.org/10.21105/jose.00144"
+  tags: ["education", "reproducibility"]
+
+- title: "Anaerobic Microbiota Derived from the Upper Airways Impact Staphylococcus aureus Physiology."
+  authors: "Lucas SK, Villarreal AR, Ahmad MM, Itabiyi A, Feddema E, Boyer HC, Hunter RC."
+  venue: "Infect Immun. 89(9):e0015321"
+  year: 2021
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370671/"
+  doi: "https://doi.org/10.1128/IAI.00153-21"
+  tags: ["Staphylococcus aureus", "airway microbiota"]
+
+- title: "Diversity of cystic fibrosis chronic rhinosinusitis microbiota correlates with different pathogen dominance."
+  authors: "Lucas SK, Feddema E, Boyer HC, Hunter RC."
+  venue: "J Cyst Fibros. 20(4):678-681"
+  year: 2021
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8403624/"
+  doi: "https://doi.org/10.1016/j.jcf.2021.03.022"
+  tags: ["cystic fibrosis", "rhinosinusitis"]
+
+- title: "Bioorthogonal non-canonical amino acid tagging reveals translationally active subpopulations of the cystic fibrosis lung microbiota."
+  authors: "Valentini TD, Lucas SK, Binder KA, Cameron LC, Motl JA, Dunitz JM, Hunter RC."
+  venue: "Nat Commun. 11(1):2287"
+  year: 2020
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7210995/"
+  doi: "https://doi.org/10.1038/s41467-020-16163-2"
+  tags: ["cystic fibrosis", "BONCAT"]
+
+- title: "Co-occurrence of Anaerobes in Human Chronic Wounds."
+  authors: "Choi Y, Banerjee A, McNish S, Couch KS, Torralba MG, Lucas S, Tovchigrechko A, Madupu R, Yooseph S, Nelson KE, Shanmugam VK, Chan AP."
+  venue: "Microb Ecol. 77(3):808-820"
+  year: 2019
+  doi: "https://doi.org/10.1007/s00248-018-1231-z"
+  tags: ["chronic wounds", "anaerobes"]
+
+- title: "US Immigration Westernizes the Human Gut Microbiome."
+  authors: "Vangay P, Johnson AJ, Ward TL, Al-Ghalith GA, Shields-Cutler RR, Hillmann BM, Lucas SK, Beura LK, Thompson EA, Till LM, Batres R, Paw B, Pergament SL, Saenyakul P, Xiong M, Kim AD, Kim G, Masopust D, Martens EC, Angkurawaranon C, McGready R, Kashyap PC, Culhane-Pera KA, Knights D."
+  venue: "Cell. 175(4):962-972.e10"
+  year: 2018
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6498444/"
+  doi: "https://doi.org/10.1016/j.cell.2018.10.029"
+  tags: ["gut microbiome"]
+
+- title: "16S rRNA gene sequencing reveals site-specific signatures of the upper and lower airways of cystic fibrosis patients."
+  authors: "Lucas SK, Yang R, Dunitz JM, Boyer HC, Hunter RC."
+  venue: "J Cyst Fibros. 17(2):204-212"
+  year: 2018
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5817045/"
+  doi: "https://doi.org/10.1016/j.jcf.2017.08.007"
+  tags: ["cystic fibrosis", "16S rRNA"]
+
+- title: "Electrochemical detection of Pseudomonas in wound exudate samples from patients with chronic wounds."
+  authors: "Sismaet HJ, Banerjee A, McNish S, Choi Y, Torralba M, Lucas S, Chan A, Shanmugam VK, Goluch ED."
+  venue: "Wound Repair Regen. 24(2):366-72"
+  year: 2016
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4853203/"
+  doi: "https://doi.org/10.1111/wrr.12414"
+  tags: ["Pseudomonas", "biosensor"]
+
+- title: "Looking Beyond Respiratory Cultures: Microbiome-Cytokine Signatures of Bacterial Pneumonia and Tracheobronchitis in Lung Transplant Recipients."
+  authors: "Shankar J, Nguyen MH, Crespo MM, Kwak EJ, Lucas SK, McHugh KJ, Mounaud S, Alcorn JF, Pilewski JM, Shigemura N, Kolls JK, Nierman WC, Clancy CJ."
+  venue: "Am J Transplant. 16(6):1766-78"
+  year: 2016
+  doi: "https://doi.org/10.1111/ajt.13676"
+  tags: ["lung transplant", "microbiome"]
+
+- title: "A multi-omic systems-based approach reveals metabolic markers of bacterial vaginosis and insight into the disease."
+  authors: "Yeoman CJ, Thomas SM, Miller ME, Ulanov AV, Torralba M, Lucas S, Gillis M, Cregger M, Gomez A, Ho M, Leigh SR, Stumpf R, Creedon DJ, Smith MA, Weisbaum JS, Nelson KE, Wilson BA, White BA."
+  venue: "PLoS One. 8(2):e56111"
+  year: 2013
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3566083/"
+  doi: "https://doi.org/10.1371/journal.pone.0056111"
+  tags: ["bacterial vaginosis", "multi-omics"]
+
+- title: "Integrated next-generation sequencing of 16S rDNA and metaproteomics differentiate the healthy urine microbiome from asymptomatic bacteriuria in neuropathic bladder associated with spinal cord injury."
+  authors: "Fouts DE, Pieper R, Szpakowski S, Pohl H, Knoblach S, Suh MJ, Huang ST, Ljungberg I, Sprague BM, Lucas SK, Torralba M, Nelson KE, Groah SL."
+  venue: "J Transl Med. 10:174"
+  year: 2012
+  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3511201/"
+  doi: "https://doi.org/10.1186/1479-5876-10-174"
+  tags: ["urine microbiome", "metaproteomics"]

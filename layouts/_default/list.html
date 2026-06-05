@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="mx-auto max-w-3xl px-6 py-16 md:py-20">
+  <div class="prose-lumen">{{ .Content }}</div>
+  <ul class="mt-10 divide-y divide-ink/10 border-t border-ink/10">
+    {{ range .Pages }}
+    <li class="py-5">
+      <a class="link-underline font-display text-xl font-semibold hover:text-vermillion" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ with .Description }}<p class="mt-1 text-sm text-ink-soft">{{ . }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

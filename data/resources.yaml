@@ -1,0 +1,36 @@
+# Resources, grouped. Each item: name, description, url, optional badge.
+# Internal links (starting with /) open in the same tab; others open in a new tab.
+
+# - group: "Software"
+#   description: "Open-source, openly licensed, and actively maintained."
+#   items:
+#     - name: "lumen-sketch"
+#       badge: "Python"
+#       description: "Fast, composable genome sketching with a friendly API and solid docs."
+#       url: "https://github.com/lumenlab/lumen-sketch"
+#     - name: "lineage-tracer"
+#       badge: "Python"
+#       description: "Reference implementation of our single-cell lineage reconstruction method."
+#       url: "https://github.com/lumenlab/lineage-tracer"
+
+# - group: "Datasets"
+#   description: "Curated, documented, and free to reuse with attribution."
+#   items:
+#     - name: "Northgate Spatial Atlas"
+#       badge: "Data"
+#       description: "A spatially resolved transcriptomic atlas across twelve tissue types."
+#       url: "https://example.org/atlas"
+#     - name: "Perturbation Benchmark v1"
+#       badge: "Data"
+#       description: "Standardised perturbation-response measurements for benchmarking generative models."
+#       url: "https://example.org/benchmark"
+
+# - group: "Teaching & protocols"
+#   description: "Materials we use in courses, workshops, and onboarding."
+#   items:
+#     - name: "Reproducible Genomics (course notes)"
+#       description: "A self-contained introduction to building pipelines that others can actually run."
+#       url: "https://example.org/course"
+#     - name: "Lab wet-to-dry protocol handbook"
+#       description: "Step-by-step protocols bridging bench experiments and computational analysis."
+#       url: "https://example.org/protocols"

@@ -1,0 +1,41 @@
+<footer class="mt-24 border-t border-ink/10 bg-paper-2">
+  <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-4">
+
+    <div class="lg:col-span-2">
+      <div class="flex items-center gap-2.5">
+        <span class="relative flex h-6 w-6 items-center justify-center">
+          <span class="absolute inset-0 rounded-full bg-vermillion"></span>
+          <span class="absolute h-2 w-2 rounded-full bg-paper"></span>
+        </span>
+        <span class="font-display text-lg font-semibold">{{ site.Title }}</span>
+      </div>
+      <p class="mt-4 max-w-sm text-sm leading-relaxed text-ink-soft">{{ site.Params.description }}</p>
+      <p class="mt-4 text-xs uppercase tracking-[0.18em] text-ink-faint">{{ site.Params.affiliation }}</p>
+    </div>
+
+    <div>
+      <h4 class="eyebrow text-ink-faint">Explore</h4>
+      <ul class="mt-4 space-y-2 text-sm">
+        {{ range site.Menus.main }}
+          <li><a class="link-underline text-ink-soft hover:text-vermillion" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="eyebrow text-ink-faint">Get in touch</h4>
+      <ul class="mt-4 space-y-2 text-sm">
+        {{ with site.Params.email }}<li><a class="link-underline text-ink-soft hover:text-vermillion" href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
+        {{ with site.Params.social.bluesky }}<li><a class="link-underline text-ink-soft hover:text-vermillion" href="{{ . }}">Bluesky</a></li>{{ end }}
+        {{ with site.Params.social.github }}<li><a class="link-underline text-ink-soft hover:text-vermillion" href="{{ . }}">GitHub</a></li>{{ end }}
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-ink/10">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-ink-faint sm:flex-row">
+      <p>© {{ now.Year }} {{ site.Title }}. All rights reserved.</p>
+      <p>Built with Hugo &amp; Tailwind CSS.</p>
+    </div>
+  </div>
+</footer>

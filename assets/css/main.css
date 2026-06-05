@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* Hugo records every utility class it emits into hugo_stats.json (mounted via
+   hugo.toml). Pointing Tailwind at it keeps the generated CSS lean. Tailwind's
+   automatic detection also scans the project, so static classes are safe. */
+@source "hugo_stats.json";
+
+/* ---------------------------------------------------------------------------
+   Design tokens — an editorial / scientific palette: warm paper, deep ink,
+   a single vermillion accent, and a muted sage for support.
+   Defining them in @theme turns them into utilities automatically
+   (bg-paper, text-ink, font-display, ...).
+--------------------------------------------------------------------------- */
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  --color-paper: #f5f1e8;
+  --color-paper-2: #ece4d4;
+  --color-paper-3: #e2d8c4;
+  --color-ink: #17181d;
+  --color-ink-soft: #4c5059;
+  --color-ink-faint: #8a8c94;
+  --color-vermillion: #d6492f;
+  --color-vermillion-dark: #b1371f;
+  --color-sage: #5e6a5a;
+
+  --radius-card: 1.25rem;
+}
+
+/* ---------------------------------------------------------------------------
+   Base layer
+--------------------------------------------------------------------------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: var(--color-vermillion);
+    color: var(--color-paper);
+  }
+
+  /* Respect reduced-motion preferences. */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Components / utilities
+--------------------------------------------------------------------------- */
+@layer components {
+  /* Paper grain overlay used on the hero. */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Small uppercase label used as an eyebrow. */
+  .eyebrow {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  /* Animated scroll-down chevron. */
+  .chevron-bounce {
+    animation: chevron-bounce 2.4s ease-in-out infinite;
+  }
+  @keyframes chevron-bounce {
+    0%, 100% { transform: translateY(0); opacity: 0.85; }
+    50% { transform: translateY(8px); opacity: 1; }
+  }
+
+  /* Staggered hero reveal. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    animation: reveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  @keyframes reveal {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Lightweight prose styles for rendered markdown content. */
+  .prose-lumen { font-size: 1.0625rem; line-height: 1.75; color: var(--color-ink-soft); }
+  .prose-lumen p { margin-block: 1em; }
+  .prose-lumen h2 { font-size: 1.6rem; margin-top: 1.8em; margin-bottom: .5em; color: var(--color-ink); }
+  .prose-lumen h3 { font-size: 1.25rem; margin-top: 1.4em; margin-bottom: .4em; color: var(--color-ink); }
+  .prose-lumen a { color: var(--color-vermillion); text-decoration: underline; text-underline-offset: 3px; }
+  .prose-lumen ul { list-style: disc; padding-left: 1.4em; margin-block: 1em; }
+  .prose-lumen ol { list-style: decimal; padding-left: 1.4em; margin-block: 1em; }
+  .prose-lumen li { margin-block: .35em; }
+  .prose-lumen strong { color: var(--color-ink); font-weight: 600; }
+  .prose-lumen blockquote { border-left: 3px solid var(--color-vermillion); padding-left: 1em; font-style: italic; color: var(--color-ink); }
+
+  /* Decorative underline links. */
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1.5px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.3s ease;
+  }
+  .link-underline:hover {
+    background-size: 100% 1.5px;
+  }
+}

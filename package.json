@@ -1,0 +1,15 @@
+{
+  "name": "lumen-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lumen Lab — a Hugo + Tailwind CSS research group website.",
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo --gc --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "tailwindcss": "^4.3.0"
+  }
+}

@@ -1,0 +1,78 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+
+<section class="mx-auto max-w-6xl px-6 py-16 md:py-20">
+  <div class="grid gap-12 lg:grid-cols-2">
+
+    {{- /* ---------- Left: details + form ---------- */ -}}
+    <div>
+      {{ with .Content }}<div class="prose-lumen mb-10 max-w-xl text-ink-soft">{{ . }}</div>{{ end }}
+
+      <dl class="space-y-6">
+        {{ with site.Params.email }}
+        <div>
+          <dt class="eyebrow text-ink-faint">Email</dt>
+          <dd class="mt-1 text-lg"><a class="link-underline hover:text-vermillion" href="mailto:{{ . }}">{{ . }}</a></dd>
+        </div>
+        {{ end }}
+        {{ with site.Params.phone }}
+        <div>
+          <dt class="eyebrow text-ink-faint">Phone</dt>
+          <dd class="mt-1 text-lg">{{ . }}</dd>
+        </div>
+        {{ end }}
+        {{ with site.Params.addressLines }}
+        <div>
+          <dt class="eyebrow text-ink-faint">Visit</dt>
+          <dd class="mt-1 text-lg leading-relaxed not-italic">
+            {{ range . }}{{ . }}<br>{{ end }}
+          </dd>
+        </div>
+        {{ end }}
+      </dl>
+
+      {{- /* Contact form: posts to params.formEndpoint, or falls back to mailto */ -}}
+      <form class="mt-10 space-y-4"
+            {{ with site.Params.formEndpoint }}action="{{ . }}" method="POST"{{ else }}action="mailto:{{ site.Params.email }}" method="POST" enctype="text/plain"{{ end }}>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <label class="block">
+            <span class="eyebrow text-ink-faint">Name</span>
+            <input name="name" type="text" required
+                   class="mt-1.5 w-full rounded-xl border border-ink/15 bg-paper px-4 py-3 text-sm outline-none transition focus:border-vermillion focus:ring-2 focus:ring-vermillion/20" />
+          </label>
+          <label class="block">
+            <span class="eyebrow text-ink-faint">Email</span>
+            <input name="email" type="email" required
+                   class="mt-1.5 w-full rounded-xl border border-ink/15 bg-paper px-4 py-3 text-sm outline-none transition focus:border-vermillion focus:ring-2 focus:ring-vermillion/20" />
+          </label>
+        </div>
+        <label class="block">
+          <span class="eyebrow text-ink-faint">Message</span>
+          <textarea name="message" rows="4" required
+                    class="mt-1.5 w-full rounded-xl border border-ink/15 bg-paper px-4 py-3 text-sm outline-none transition focus:border-vermillion focus:ring-2 focus:ring-vermillion/20"></textarea>
+        </label>
+        <button type="submit"
+                class="inline-flex items-center gap-2 rounded-full bg-vermillion px-7 py-3 text-sm font-semibold text-paper transition-colors hover:bg-vermillion-dark">
+          Send message
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </button>
+      </form>
+    </div>
+
+    {{- /* ---------- Right: Google Map (no API key required) ---------- */ -}}
+    <div>
+      <div class="overflow-hidden rounded-card border border-ink/10 shadow-[0_24px_60px_-30px_rgba(23,24,29,0.5)]">
+        <iframe
+          title="Map to {{ site.Title }}"
+          class="h-[420px] w-full lg:h-full lg:min-h-[520px]"
+          style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?{{ querify "q" site.Params.mapQuery }}&amp;output=embed">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}

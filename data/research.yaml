@@ -1,0 +1,10 @@
+themes:
+  - number: "01"
+    title: "Microbiome Disruption"
+    description: "Determining how microbiomes are disrupted in disease, and how to restore them."
+  - number: "02"
+    title: "What defines the commensal to pathogen transition?"
+    description: "Identifying the molecular and ecological factors that drive the transition from commensal to pathogen"
+  - number: "03"
+    title: "Open, reproducible research"
+    description: "Software and pipelines that anyone can run, audit, and build on — because results should be repeatable."

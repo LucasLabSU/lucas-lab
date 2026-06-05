@@ -1,0 +1,36 @@
+# # Homepage news feed. Newest first.
+# - date: "May 2026"
+#   category: "Paper"
+#   title: "A scalable model for single-cell lineage tracing"
+#   summary: "Our new method reconstructs cell histories from sparse barcodes with a fraction of the compute. Now out in Nature Methods."
+#   url: "/research/"
+
+# - date: "Apr 2026"
+#   category: "Award"
+#   title: "Dr. Imani Okafor named a Pew Biomedical Scholar"
+#   summary: "Recognising early-career work on the statistical foundations of spatial transcriptomics."
+#   url: ""
+
+# - date: "Mar 2026"
+#   category: "Software"
+#   title: "lumen-sketch v2.0 released"
+#   summary: "A ground-up rewrite of our genome sketching toolkit — 4× faster, with a friendlier Python API."
+#   url: "/resources/"
+
+# - date: "Feb 2026"
+#   category: "Talk"
+#   title: "Keynote at the Quantitative Biology Symposium"
+#   summary: "Slides and a recording of our talk on open, reproducible pipelines are now available."
+#   url: ""
+
+# - date: "Jan 2026"
+#   category: "Lab life"
+#   title: "Welcome to two new PhD students"
+#   summary: "Maya and Theo join us from physics and computer science. The whiteboards have never been busier."
+#   url: ""
+
+# - date: "Dec 2025"
+#   category: "Grant"
+#   title: "NIH R01 funded: decoding regulatory grammar"
+#   summary: "A four-year project to map how non-coding variation shapes gene expression across tissues."
+#   url: ""

@@ -1,0 +1,84 @@
+baseURL = 'https://www.lucaslab.org/'
+languageCode = 'en-us'
+title = 'Lucas Lab'
+
+# ---------------------------------------------------------------------------
+# Tailwind CSS v4 integration
+# Hugo writes the list of classes it actually uses to hugo_stats.json, then
+# mounts it into the assets dir so Tailwind can scan it. The cachebusters make
+# the CSS rebuild whenever that file (or a tailwind/postcss config) changes.
+# ---------------------------------------------------------------------------
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# ---------------------------------------------------------------------------
+# Top navigation bar
+# ---------------------------------------------------------------------------
+[[menu.main]]
+  name = 'Research'
+  pageRef = '/research'
+  weight = 10
+[[menu.main]]
+  name = 'Team'
+  pageRef = '/team'
+  weight = 20
+[[menu.main]]
+  name = 'Resources'
+  pageRef = '/resources'
+  weight = 30
+[[menu.main]]
+  name = 'Contact'
+  pageRef = '/contact'
+  weight = 40
+
+# ---------------------------------------------------------------------------
+# Site-wide parameters — edit these to make the site yours
+# ---------------------------------------------------------------------------
+[params]
+  shortName = 'Lucas Lab'
+  tagline = 'Investigating microbial community dynamics in health and disease'
+  description = 'The Lucas Lab studies microbial systems through integration of in vivo, in vitro, and computational approaches.'
+  affiliation = 'Department of Biology · Syracuse University'
+
+  # Optional: drop a file at static/images/hero.jpg and set this to "images/hero.jpg".
+  # If left blank, the bundled SVG hero is used instead.
+  heroImage = ''
+
+  # Contact details (used on the Contact page)
+  email = 'sklucas@syr.edu'
+  phone = '+1 (555) 014-2200'
+  addressLines = ['Syracuse University', 'Life Sciences Complex', '107 College Place', 'Syracuse, NY 13244']
+
+  # Google Maps embed query. Any address or place name works — no API key needed.
+  mapQuery = 'Syracuse University, Syracuse, NY'
+
+  # Optional: a Formspree (or similar) endpoint for the contact form.
+  # Leave blank to fall back to a mailto: link.
+  formEndpoint = ''
+
+[params.social]
+  bluesky = 'https://bsky.app/profile/saerobe.example'
+  github = 'https://github.com/LucasLabSU'
+  scholar = 'https://scholar.google.com/citations?user=j-o8TQwAAAAJ&hl=en'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[taxonomies]
+  tag = 'tags'

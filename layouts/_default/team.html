@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+
+<section class="mx-auto max-w-6xl px-6 py-16 md:py-20">
+  {{ with .Content }}<div class="prose-lumen mb-12 max-w-2xl text-ink-soft">{{ . }}</div>{{ end }}
+
+  {{ range site.Data.team }}
+  <div class="mb-16 last:mb-0">
+    <div class="flex items-center gap-4">
+      <h2 class="font-display text-2xl font-semibold tracking-tight">{{ .group }}</h2>
+      <span class="h-px flex-1 bg-ink/10"></span>
+    </div>
+
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {{ range .members }}
+      <article class="flex flex-col rounded-card border border-ink/10 bg-paper-2/30 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-vermillion/40 hover:shadow-[0_18px_40px_-24px_rgba(23,24,29,0.45)]">
+        <div class="flex items-center gap-4">
+          {{ if .avatar }}
+            <img src="{{ .avatar | relURL }}" alt="{{ .name }}" class="h-16 w-16 shrink-0 rounded-full object-cover ring-2 ring-paper-3" />
+          {{ else }}
+            {{- /* Monogram fallback when no photo is provided */ -}}
+            {{ $initials := "" }}
+            {{ range (split .name " ") }}{{ if gt (len .) 0 }}{{ $initials = printf "%s%s" $initials (substr . 0 1) }}{{ end }}{{ end }}
+            <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-vermillion/12 font-display text-xl font-semibold text-vermillion ring-2 ring-paper-3">
+              {{ upper (substr $initials 0 2) }}
+            </div>
+          {{ end }}
+          <div class="min-w-0">
+            <h3 class="font-display text-lg font-semibold leading-tight">{{ .name }}</h3>
+            <p class="mt-0.5 text-sm font-medium text-vermillion">{{ .role }}</p>
+          </div>
+        </div>
+
+        {{ with .bio }}<p class="mt-5 flex-1 text-sm leading-relaxed text-ink-soft">{{ . }}</p>{{ end }}
+
+        {{ partial "social-links.html" . }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</section>
+{{ end }}

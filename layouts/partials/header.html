@@ -1,0 +1,45 @@
+{{- $page := . -}}
+<header class="sticky top-0 z-50 border-b border-ink/10 bg-paper/80 backdrop-blur-md">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+
+    {{- /* Wordmark */ -}}
+    <a href="{{ "/" | relLangURL }}" class="group flex items-center gap-2.5">
+      <span class="relative flex h-7 w-7 items-center justify-center">
+        <span class="absolute inset-0 rounded-full bg-vermillion transition-transform duration-300 group-hover:scale-110"></span>
+        <span class="absolute h-2.5 w-2.5 rounded-full bg-paper"></span>
+      </span>
+      <span class="font-display text-xl font-semibold tracking-tight">{{ or site.Params.shortName site.Title }}</span>
+    </a>
+
+    {{- /* Desktop links */ -}}
+    <div class="hidden items-center gap-8 md:flex">
+      {{ range site.Menus.main }}
+        {{ $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+        <a href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}"
+           class="link-underline text-sm font-medium tracking-wide {{ if $active }}text-vermillion{{ else }}text-ink hover:text-vermillion{{ end }}">
+          {{ .Name }}
+        </a>
+      {{ end }}
+    </div>
+
+    {{- /* Mobile toggle */ -}}
+    <button id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/15 text-ink md:hidden">
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+        <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+      </svg>
+    </button>
+  </nav>
+
+  {{- /* Mobile panel */ -}}
+  <div id="nav-panel" class="hidden border-t border-ink/10 bg-paper md:hidden">
+    <div class="mx-auto flex max-w-6xl flex-col px-6 py-2">
+      {{ range site.Menus.main }}
+        <a href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}"
+           class="border-b border-ink/5 py-3 text-base font-medium last:border-0 hover:text-vermillion">
+          {{ .Name }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</header>

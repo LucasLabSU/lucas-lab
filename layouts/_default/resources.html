@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+
+<section class="mx-auto max-w-6xl px-6 py-16 md:py-20">
+  {{ with .Content }}<div class="prose-lumen mb-12 max-w-2xl text-ink-soft">{{ . }}</div>{{ end }}
+
+  {{ range site.Data.resources }}
+  <div class="mb-14 last:mb-0">
+    <div class="flex items-center gap-4">
+      <h2 class="font-display text-2xl font-semibold tracking-tight">{{ .group }}</h2>
+      <span class="h-px flex-1 bg-ink/10"></span>
+    </div>
+    {{ with .description }}<p class="mt-3 max-w-2xl text-sm leading-relaxed text-ink-soft">{{ . }}</p>{{ end }}
+
+    <div class="mt-7 grid gap-5 md:grid-cols-2">
+      {{ range .items }}
+      <a href="{{ .url }}" {{ if not (hasPrefix .url "/") }}target="_blank" rel="noopener"{{ end }}
+         class="group flex items-start justify-between gap-4 rounded-card border border-ink/10 bg-paper-2/30 p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-vermillion/40 hover:shadow-[0_18px_40px_-24px_rgba(23,24,29,0.45)]">
+        <div>
+          <div class="flex items-center gap-2">
+            <h3 class="font-display text-lg font-semibold leading-snug">{{ .name }}</h3>
+            {{ with .badge }}<span class="rounded-full bg-vermillion/10 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-vermillion">{{ . }}</span>{{ end }}
+          </div>
+          <p class="mt-2 text-sm leading-relaxed text-ink-soft">{{ .description }}</p>
+        </div>
+        <svg class="mt-1 h-5 w-5 shrink-0 text-ink-faint transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-vermillion" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7m0 0H8m9 0v9"/></svg>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</section>
+{{ end }}

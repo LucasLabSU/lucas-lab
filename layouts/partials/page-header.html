@@ -1,0 +1,8 @@
+{{- /* Inner-page header band. Context = the page. */ -}}
+<section class="border-b border-ink/10 bg-paper-2/50">
+  <div class="mx-auto max-w-6xl px-6 pt-16 pb-14 md:pt-20 md:pb-16">
+    <p class="eyebrow text-vermillion">{{ or .Params.eyebrow site.Params.shortName }}</p>
+    <h1 class="mt-4 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl">{{ .Title }}</h1>
+    {{ with .Params.lead }}<p class="mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft">{{ . }}</p>{{ end }}
+  </div>
+</section>
