@@ -29,7 +29,7 @@
             <p class="mt-1 text-sm font-medium text-vermillion">{{ .role }}</p>
           </div>
 
-          {{ with .bio }}<p class="text-sm leading-relaxed text-ink-soft">{{ . }}</p>{{ end }}
+          {{ with .bio }}<p class="text-sm leading-relaxed text-ink-soft text-left">{{ . }}</p>{{ end }}
 
         {{ partial "social-links.html" . }}
       </article>
