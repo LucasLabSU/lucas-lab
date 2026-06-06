@@ -2,33 +2,15 @@
 # Each member: name, role, bio, optional avatar (path under static/),
 # and optional orcid / linkedin / bluesky URLs (icons appear only when set).
 
-- group: "Principal Investigator"
+- group: "Current Lab Members"
   members:
     - name: "Sarah Lucas"
-      role: "Assistant Professor"
+      role: "Principal Investigator"
       bio: "Sarah Lucas is an assistant professor in the Biology Department at Syracuse University. She leads the Lucas Lab, where her team investigates microbial adaptation to mucosal environments using a combination of experimental and computational approaches. Sarah completed her PhD through the Microbology, Immunology, and Cancer Biology program at the University of Minnesota, where she studied mucin-degrading anaerobes in chronic sinus infections. Her postdoctoral work at University of Michigan used metagenomic profiling and time-series sampling to study how bacteria and bacteriophages adapt across antibiotic disturbances in the gut. Sarah is passionate about open science, reproducibility, and building a supportive research community."
       avatar: ""
       orcid: "https://orcid.org/0000-0002-1825-0097"
       linkedin: "https://www.linkedin.com/in/example"
       bluesky: "https://bsky.app/profile/example.bsky.social"
-
-# - group: "Postdoctoral Researchers"
-#   members:
-#     - name: "Diego Marin"
-#       role: "Postdoctoral Fellow"
-#       bio: "Develops deep generative models for perturbation screens. Coffee evangelist and trail runner."
-#       avatar: ""
-#       orcid: "https://orcid.org/0000-0001-2345-6789"
-#       bluesky: "https://bsky.app/profile/example.bsky.social"
-#     - name: "Hana Yoshida"
-#       role: "Postdoctoral Fellow"
-#       bio: "Works on probabilistic models of cell differentiation and the statistics of lineage tracing."
-#       avatar: ""
-#       orcid: "https://orcid.org/0000-0003-4567-8901"
-#       linkedin: "https://www.linkedin.com/in/example"
-
-- group: "Graduate Students"
-  members:
     - name: "Anton Jayakodiarachchige"
       role: "PhD Student, Biology"
       bio: "Anton received his B.S. in Biology from the University at Buffalo, where his interest in human health and disease first took shape. He continued his studies at the University at Buffalo, earning a Master of Engineering with a focus on targeted protein degradation of disease-associated proteins. He is currently a Ph.D. candidate studying strain-level variation in Mediterraneibacter gnavus (M. gnavus) and their role in inflammatory bowel disease. Beyond his research, Anton enjoys discovering new places, experiencing different cuisines, and traveling whenever he has the opportunity."
