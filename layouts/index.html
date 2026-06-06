@@ -4,7 +4,7 @@
 <section class="grain relative flex min-h-[100svh] items-center overflow-hidden">
   {{- /* Background image: bundled SVG by default, or a custom one via params.heroImage */ -}}
   <div class="absolute inset-0 -z-10">
-    {{ $hero := or site.Params.heroImage "images/hero.svg" }}
+    {{ $hero := or site.Params.heroImage "images/boncat.png" }}
     <img src="{{ $hero | relURL }}" alt="" class="h-full w-full object-cover">
     <div class="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/55 to-ink/85"></div>
   </div>
