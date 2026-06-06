@@ -7,7 +7,7 @@
     - name: "Sarah Lucas"
       role: "Principal Investigator"
       bio: "Sarah Lucas is an assistant professor in the Biology Department at Syracuse University. She leads the Lucas Lab, where her team investigates microbial adaptation to mucosal environments using a combination of experimental and computational approaches. Sarah completed her PhD through the Microbology, Immunology, and Cancer Biology program at the University of Minnesota, where she studied mucin-degrading anaerobes in chronic sinus infections. Her postdoctoral work at University of Michigan used metagenomic profiling and time-series sampling to study how bacteria and bacteriophages adapt across antibiotic disturbances in the gut. Sarah is passionate about open science, reproducibility, and building a supportive research community."
-      avatar: ""
+      avatar: "images/lucas_avatar.png"
       orcid: "https://orcid.org/0000-0002-1825-0097"
       linkedin: "https://www.linkedin.com/in/example"
       bluesky: "https://bsky.app/profile/example.bsky.social"
@@ -50,10 +50,14 @@
   members:
     - name: "Brad Kalbach"
       role: "Distinction Undergraduate Researcher, Biotechnology"
+      avatar: "images/brad_kalbach.jpg"
     - name: "Alli Privatera"
       role: "Distinction Undergraduate Researcher, Biochemistry"
+      avatar: "images/privatera_avatar.jpg"
     - name: "Ria Shah"
       role: "Undergraduate Researcher, Neuroscience"
+      avatar: "images/shah_avatar.jpg"
     - name: "Marcella Morrisson"
       role: "Distinction Undergraduate Researcher, Biotechnology"
+      avatar: "images/morrisson_avatar.jpg"
   
