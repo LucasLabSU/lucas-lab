@@ -13,8 +13,7 @@
 
     <div class="mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
       {{ range .members }}
-      <article class="flex flex-col gap-6 rounded-card border border-ink/10 bg-paper-2/30 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-vermillion/40 hover:shadow-[0_18px_40px_-24px_rgba(23,24,29,0.45)]">
-        <div class="flex items-start gap-4">
+      <article class="flex flex-col items-center gap-6 rounded-card border border-ink/10 bg-paper-2/30 p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-vermillion/40 hover:shadow-[0_18px_40px_-24px_rgba(23,24,29,0.45)]">
           {{ if .avatar }}
             <img src="{{ .avatar | relURL }}" alt="{{ .name }}" class="h-32 w-32 shrink-0 rounded-full object-cover ring-2 ring-paper-3 sm:h-40 sm:w-40 md:h-48 md:w-48" />
           {{ else }}
@@ -25,13 +24,12 @@
               {{ upper (substr $initials 0 2) }}
             </div>
           {{ end }}
-          <div class="min-w-0">
+          <div>
             <h3 class="font-display text-lg font-semibold leading-tight">{{ .name }}</h3>
-            <p class="mt-0.5 text-sm font-medium text-vermillion">{{ .role }}</p>
+            <p class="mt-1 text-sm font-medium text-vermillion">{{ .role }}</p>
           </div>
-        </div>
 
-        {{ with .bio }}<p class="text-sm leading-relaxed text-ink-soft">{{ . }}</p>{{ end }}
+          {{ with .bio }}<p class="text-sm leading-relaxed text-ink-soft">{{ . }}</p>{{ end }}
 
         {{ partial "social-links.html" . }}
       </article>
