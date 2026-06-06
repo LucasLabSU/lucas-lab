@@ -3,7 +3,7 @@ title: "Research"
 layout: "research"
 eyebrow: "What drives us"
 lead: ""
-description: "Research themes and publications from Lumen Lab."
+description: "Research themes and publications from the Lucas Lab."
 ---
 
 Our work sits at the intersection of classical microbiology, ecology, and genomics. We
