@@ -32,7 +32,7 @@
     - name: "Anton Jayakodiarachchige"
       role: "PhD Student, Biology"
       bio: "Anton received his B.S. in Biology from the University at Buffalo, where his interest in human health and disease first took shape. He continued his studies at the University at Buffalo, earning a Master of Engineering with a focus on targeted protein degradation of disease-associated proteins. He is currently a Ph.D. candidate studying strain-level variation in Mediterraneibacter gnavus (M. gnavus) and their role in inflammatory bowel disease. Beyond his research, Anton enjoys discovering new places, experiencing different cuisines, and traveling whenever he has the opportunity."
-      avatar: "static/AntonJay.jpeg"
+      avatar: "static/images/AntonJay.jpeg"
       bluesky: ""
       linkedin: "https://www.linkedin.com/in/anton-jayakodi"
       orcid: ""
@@ -51,7 +51,7 @@
     - name: "Zaye Buanno"
       role: "PhD Student, Biology"
       bio: "Zaye received her BA in biology from Skidmore College, where she conducted research investigating how bacteria adapt biochemically to different environmental niches and explored their various mechanisms of protein synthesis. Upon joining the Lucas lab, Zaye began her project studying the mechanisms behind adaptation of the human gut microbiome in response to pharmacological perturbation in a chemostat bioreactor system. Outside of the lab, Zaye enjoys spending time with her cat, Paisley."
-      avatar: "static/ZayeBuanno.jpg"
+      avatar: "static/images/ZayeBuanno.jpg"
       linkedin: "https://www.linkedin.com/in/zaye-buanno-9113bb202"
       orcid: ""
 
