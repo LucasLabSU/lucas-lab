@@ -6,5 +6,4 @@ lead: "Questions about the work, a possible collaboration, or joining the lab? W
 description: "Get in touch with the Lucas Lab."
 ---
 
-The fastest way to reach us is email. For prospective students, please include a short
-note about your interests and a CV. You will usually hear back within a few days.
+The fastest way to reach us is email. For prospective students, please include a short note about your interests and a CV. You will usually hear back within a few days.
