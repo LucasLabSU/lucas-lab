@@ -66,7 +66,7 @@ title = 'Lucas Lab'
   addressLines = ['Syracuse University', 'Life Sciences Complex', '107 College Place', 'Syracuse, NY 13244']
 
   # Google Maps embed query. Any address or place name works — no API key needed.
-  mapQuery = 'Syracuse University, Syracuse, NY'
+  mapQuery = 'Life Sciences Complex, Syracuse University'
 
   # Optional: a Formspree (or similar) endpoint for the contact form.
   # Leave blank to fall back to a mailto: link.
