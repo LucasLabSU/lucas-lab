@@ -13,7 +13,7 @@
 
     <div class="mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
       {{ range .members }}
-      <article class="flex flex-col items-center gap-6 rounded-card border border-ink/10 bg-paper-2/30 p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-vermillion/40 hover:shadow-[0_18px_40px_-24px_rgba(23,24,29,0.45)]">
+      <article class="team-card cursor-pointer flex flex-col items-center gap-6 rounded-card border border-ink/10 bg-paper-2/30 p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-vermillion/40 hover:shadow-[0_18px_40px_-24px_rgba(23,24,29,0.45)]">
           {{ if .avatar }}
             <img src="{{ .avatar | relURL }}" alt="{{ .name }}" class="h-32 w-32 shrink-0 rounded-full object-cover ring-2 ring-paper-3 sm:h-40 sm:w-40 md:h-48 md:w-48" />
           {{ else }}
@@ -27,9 +27,14 @@
           <div>
             <h3 class="font-display text-lg font-semibold leading-tight">{{ .name }}</h3>
             <p class="mt-1 text-sm font-medium text-vermillion whitespace-pre-line">{{ .role }}</p>
+            {{ with .bio }}
+            <svg class="bio-toggle mx-auto mt-3 h-4 w-4 text-vermillion transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19 14-7 7m0 0-7-7m7 7V3"/>
+            </svg>
+            {{ end }}
           </div>
 
-          {{ with .bio }}<p class="text-sm leading-relaxed text-ink-soft text-left">{{ . }}</p>{{ end }}
+          {{ with .bio }}<p class="bio-text hidden text-sm leading-relaxed text-ink-soft text-left">{{ . }}</p>{{ end }}
 
         {{ partial "social-links.html" . }}
       </article>
@@ -38,4 +43,23 @@
   </div>
   {{ end }}
 </section>
+
+<script>
+  document.querySelectorAll('.team-card').forEach(card => {
+    card.addEventListener('click', function(e) {
+      // Don't toggle if clicking on social links
+      if (e.target.closest('a')) return;
+      
+      const bioText = this.querySelector('.bio-text');
+      const bioToggle = this.querySelector('.bio-toggle');
+      if (bioText) {
+        bioText.classList.toggle('hidden');
+        if (bioToggle) {
+          bioToggle.classList.toggle('rotate-180');
+        }
+      }
+    });
+  });
+</script>
+
 {{ end }}
