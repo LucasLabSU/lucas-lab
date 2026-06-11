@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+
+<section class="mx-auto max-w-6xl px-6 py-16 md:py-20">
+  {{ with .Content }}<div class="prose-lumen max-w-3xl text-ink-soft">{{ . }}</div>{{ end }}
+
+  {{- /* Image collage using CSS columns for masonry layout */ -}}
+  <div class="mt-16 columns-1 gap-6 md:columns-2 lg:columns-3 space-y-6">
+    <figure class="break-inside-avoid rounded-card border border-ink/10 overflow-hidden">
+      <img src="{{ "images/lab_life/IMG_0021.jpg" | relURL }}" alt="Lab moment" class="w-full h-auto">
+    </figure>
+    <figure class="break-inside-avoid rounded-card border border-ink/10 overflow-hidden">
+      <img src="{{ "images/lab_life/IMG_0080.jpg" | relURL }}" alt="Lab moment" class="w-full h-auto">
+    </figure>
+    <figure class="break-inside-avoid rounded-card border border-ink/10 overflow-hidden">
+      <img src="{{ "images/lab_life/IMG_7072.jpg" | relURL }}" alt="Lab moment" class="w-full h-auto">
+    </figure>
+	<figure class="break-inside-avoid rounded-card border border-ink/10 overflow-hidden">
+      <img src="{{ "images/lab_life/IMG_7925.jpg" | relURL }}" alt="Lab moment" class="w-full h-auto">
+    </figure>
+	<figure class="break-inside-avoid rounded-card border border-ink/10 overflow-hidden">
+      <img src="{{ "images/lab_life/IMG_7934.jpg" | relURL }}" alt="Lab moment" class="w-full h-auto">
+    </figure>
+	<figure class="break-inside-avoid rounded-card border border-ink/10 overflow-hidden">
+      <img src="{{ "images/lab_life/IMG_8113.jpg" | relURL }}" alt="Lab moment" class="w-full h-auto">
+    </figure>
+	<figure class="break-inside-avoid rounded-card border border-ink/10 overflow-hidden">
+      <img src="{{ "images/lab_life/IMG_8369.jpg" | relURL }}" alt="Lab moment" class="w-full h-auto">
+    </figure>
+  </div>
+</section>
+
+{{ end }}

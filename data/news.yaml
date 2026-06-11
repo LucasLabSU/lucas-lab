@@ -1,4 +1,28 @@
 # # Homepage news feed. Newest first.
+
+- date: "June 2026"
+  category: "Milestone"
+  title: "Three new PhD candidates in the lab!"
+  summary: "Zaye Buanno, Anton Jayakodiarachchige, and Minakshi Roy all successfully defended their PhD proposals. We can't wait for all the great work to come!"
+  #image: "images/ZayeBuanno.jpg"
+  # url: "/research/"
+
+- date: "May 2026"
+  category: "Milestone"
+  title: "Congratulations to Alli Privatera and Brad Kalbach on their graduation from Syracuse University!"
+  summary: "Alli Privatera has been a Biochemistry Distinction student in the lab since 2023, and spearheaded an investigation into the role of *P. mirabilis* in post-mortem microbiome. Brad Kalbach joined us in early 2024 as a Biotechnology distinction student. His thesis project used bioinformatic tools to identify prophages in oral anaerobe genomes. We wish them both the best of luck in their next adventures!"
+  image: "images/alli_and_brad.jpg"
+  # url: "/research/"
+
+
+- date: "November 2025"
+  category: "Award"
+  title: "Anton Jayakodiarachchige wins second place in the Development and Disease Poster Competition at the 2026 Bioinspired Institute Symposium"
+  summary: "Congratulations to Anton for his excellent work investigating strain-level bacterial responses to redox stress!"
+  image: "images/news/IMG_9601.jpg"
+  # url: "/research/"
+  
+
 # - date: "May 2026"
 #   category: "Paper"
 #   title: "A scalable model for single-cell lineage tracing"

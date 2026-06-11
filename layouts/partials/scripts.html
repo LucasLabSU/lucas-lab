@@ -15,4 +15,20 @@
       });
     });
   })();
+
+  // Research theme expand/collapse
+  (function () {
+    var themeToggles = document.querySelectorAll('.theme-toggle');
+    themeToggles.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var details = btn.parentElement.querySelector('.theme-details');
+        var icon = btn.querySelector('.toggle-icon');
+        var text = btn.querySelector('.toggle-text');
+        var isHidden = details.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isHidden));
+        text.textContent = isHidden ? 'Learn more' : 'Show less';
+        icon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+      });
+    });
+  })();
 </script>

@@ -12,7 +12,9 @@
       linkedin: "https://www.linkedin.com/in/example"
       bluesky: "https://bsky.app/profile/example.bsky.social"
     - name: "Anton Jayakodiarachchige"
-      role: "PhD Student, Biology"
+      role: |
+        PhD Candidate, Biology
+        NSF NRT EmIRGE-Bio Fellow
       bio: "Anton received his B.S. in Biology from the University at Buffalo, where his interest in human health and disease first took shape. He continued his studies at the University at Buffalo, earning a Master of Engineering with a focus on targeted protein degradation of disease-associated proteins. He is currently a Ph.D. candidate studying strain-level variation in Mediterraneibacter gnavus (M. gnavus) and their role in inflammatory bowel disease. Beyond his research, Anton enjoys discovering new places, experiencing different cuisines, and traveling whenever he has the opportunity."
       avatar: "images/AntonJay.jpeg"
       bluesky: ""
