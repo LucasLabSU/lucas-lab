@@ -39,6 +39,10 @@ title = 'Lucas Lab'
   pageRef = '/team'
   weight = 20
 [[menu.main]]
+  name = 'Lab Life'
+  pageRef = '/lab-life'
+  weight = 25
+[[menu.main]]
   name = 'Resources'
   pageRef = '/resources'
   weight = 30
