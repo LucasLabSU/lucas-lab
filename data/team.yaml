@@ -7,7 +7,7 @@
     - name: "Sarah Lucas"
       role: "Principal Investigator"
       bio: "Sarah Lucas is an assistant professor in the Biology Department at Syracuse University. She leads the Lucas Lab, where her team investigates microbial adaptation to mucosal environments using a combination of experimental and computational approaches. Sarah completed her PhD through the Microbology, Immunology, and Cancer Biology program at the University of Minnesota, where she studied mucin-degrading anaerobes in chronic sinus infections. Her postdoctoral work at University of Michigan used metagenomic profiling and time-series sampling to study how bacteria and bacteriophages adapt across antibiotic disturbances in the gut. Sarah is passionate about open science, reproducibility, and building a supportive research community."
-      avatar: "images/lucas_avatar.png"
+      avatar: "images/team/lucas_avatar.png"
       orcid: "https://orcid.org/0000-0002-1825-0097"
       linkedin: "https://www.linkedin.com/in/example"
       bluesky: "https://bsky.app/profile/example.bsky.social"
@@ -16,7 +16,7 @@
         PhD Candidate, Biology
         NSF NRT EmIRGE-Bio Fellow
       bio: "Anton received his B.S. in Biology from the University at Buffalo, where his interest in human health and disease first took shape. He continued his studies at the University at Buffalo, earning a Master of Engineering with a focus on targeted protein degradation of disease-associated proteins. He is currently a Ph.D. candidate studying strain-level variation in Mediterraneibacter gnavus (M. gnavus) and their role in inflammatory bowel disease. Beyond his research, Anton enjoys discovering new places, experiencing different cuisines, and traveling whenever he has the opportunity."
-      avatar: "images/AntonJay.jpeg"
+      avatar: "images/team/AntonJay.jpeg"
       bluesky: ""
       linkedin: "https://www.linkedin.com/in/anton-jayakodi"
       orcid: ""
@@ -28,14 +28,20 @@
       orcid: ""
     - name: "Minakshi Roy"
       role: "PhD Student, Biology"
-      bio: ""
-      avatar: ""
+      bio: >-
+        Minakshi received her BS in clinical nutrition from Christian Medical College in
+        India. She earned MS in nutritional sciences from University of Hawaii at Manoa,
+        where her thesis project was on the role of elimination diet in Crohn’s disease.
+        In collaboration with the SUNY Upstate Medical University, her PhD project is investigating
+        how targeting gut microbiome can mitigate post-transplant diarrhea. In her leisure
+        time, Minakshi loves to cook and listen to music.
+      avatar: "images/team/minakshi_roy.jpg"
       linkedin: ""
       orcid: ""
     - name: "Zaye Buanno"
       role: "PhD Student, Biology"
       bio: "Zaye received her BA in biology from Skidmore College, where she conducted research investigating how bacteria adapt biochemically to different environmental niches and explored their various mechanisms of protein synthesis. Upon joining the Lucas lab, Zaye began her project studying the mechanisms behind adaptation of the human gut microbiome in response to pharmacological perturbation in a chemostat bioreactor system. Outside of the lab, Zaye enjoys spending time with her cat, Paisley."
-      avatar: "images/ZayeBuanno.jpg"
+      avatar: "images/team/ZayeBuanno.jpg"
       linkedin: "https://www.linkedin.com/in/zaye-buanno-9113bb202"
       orcid: ""
 
@@ -55,11 +61,11 @@
       avatar: "images/brad_kalbach.jpg"
     - name: "Alli Privatera"
       role: "Distinction Undergraduate Researcher, Biochemistry"
-      avatar: "images/privatera_avatar.png"
+      avatar: "images/team/privatera_avatar.png"
     - name: "Ria Shah"
       role: "Undergraduate Researcher, Neuroscience"
       avatar: "images/shah_avatar.png"
     - name: "Marcella Morrisson"
       role: "Distinction Undergraduate Researcher, Biotechnology"
-      avatar: "images/morrisson_avatar.png"
+      avatar: "images/team/morrisson_avatar.png"
   
